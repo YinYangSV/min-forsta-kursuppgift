@@ -1,0 +1,32 @@
+# Detta är en log där jag dokumenterar och planerar mitt arbete
+#
+# Med hjälp av chatgpt när jag fastnade
+# Prompt - detta är min uppgift och jag vill att du ska agera som min lärare, ge mig alltså inte bara svaren utan också förklara 
+# varför det är som det är. Ge mig bara svaren när jag frågar om det men förklara huvudsakligen varför det är som det är då.
+#
+# IP plan
+# Server  - 192.168.10.20/24
+# Desktop - 192.168.10.21/24
+#
+# Maskiner - Linux server & desktop
+#
+# Fel under uppsättning av maskiner
+#1 gick inte att skapa nätverk - 19/9-2026
+# Anledning och felsökning, testade mig fram för märkte att host-only adapter
+# inte ville sammarbeta, Internal Network gick skapade nätverk med namn "IT-LAB"
+#
+# Del 2.1 Tilldela IP till server 22/9-2026
+# för att tilldela ip-adress gick jag via kommandot "nano" i delen som sätter upp ip adresser
+# sudo nano /etc/netplan/00-installer-config.yaml
+# Där ändrade jag dhcp4 & dhcp6 från "true" till "false" för att ha en statisk ip adress istället för en slumpmässig
+# Jag lade till "addresses:" "- 192.168.10.20/24" då det var min bestämda server ip
+# kontrollerade via "ip a" att den tilldelade ip adressen fans där
+# tips från Mr.GPT var att installera "OPENssh" för kryptering mellan maskinerna
+# Del 2.2 Tilldela IP till desktop
+#
+#
+#
+#
+#
+#
+#
