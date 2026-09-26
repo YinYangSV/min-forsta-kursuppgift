@@ -22,6 +22,15 @@
 # Jag lade till "addresses:" "- 192.168.10.20/24" då det var min bestämda server ip
 # kontrollerade via "ip a" att den tilldelade ip adressen fans där
 # tips från Mr.GPT var att installera "OPENssh" för kryptering mellan maskinerna
+# Skapar Vim för git uppladdning
+# vim update.sh
+##! /bin/bash
+#git status
+#git add .
+#git commit -m "Uppdaterar kursuppgiften!"
+#git push
+#
+#chmod +x update.sh
 # Del 2.2 Tilldela IP till desktop
 #
 #
