@@ -31,11 +31,15 @@
 #git push
 #
 #chmod +x update.sh
-# Del 2.2 Tilldela IP till desktop
-#
-#
-#
-#
-#
+# Del 2.2 Tilldela IP till desktop  20/09-26/09-2026 "felsökning och lagning"
+# För att tilldela ip-adress gick jag samma väg som i servern, via kommandot "nano" i delen som sätter upp ip adresser
+# sedan när jag försökte pinga servern eller se ip addressen på desktop så fungerade det inte, därav kollade jag om jag glömt något kommando
+# eller om jag missat tilldela nätverket i virtualbox, vilket jag hade gjort. Jag gick in i inställningarna för desktop och tilldelade nätverket "IT-LAB" som jag skapade tidigare.
+# när jag sökte upp problemet fick jag ett kommando som jag testade, sudo nmcli connection show + sudo nmcli connection up netplan-enp0s3 vilket gav
+# ett felmeddelande och ett tips att jag skulle köra kommandot "journalctl -xe NM_CONNECTION=1eef7e45-3b9d-3043-bee3-fc5925c90273 + NM_DEVICE=enp0s3" för att se yttligare info
+# detta kommando gav mig en varning om att "IP address 192.168.10.20 cannot be fonfigured because its already in use by another device" 
+# vilket jag förstod att det var servern som hade den ip adressen då jag kollade tillbaka i min ip plan och såg att jag tilldelat fel ip till desktopen, 
+# jag ändrade därför ip adressen till rätt desktop ip som var 192.168.10.21/24 och då fungerade det, 
+# jag kunde pinga servern och se ip adressen på desktop.
 #
 #
