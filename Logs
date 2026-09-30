@@ -24,11 +24,11 @@
 # tips från Mr.GPT var att installera "OPENssh" för kryptering mellan maskinerna
 # Skapar Vim för git uppladdning
 # vim update.sh
-##! /bin/bash
-#git status
-#git add .
-#git commit -m "Uppdaterar kursuppgiften!"
-#git push
+# #! /bin/bash
+# git status
+# git add .
+# git commit -m "Uppdaterar kursuppgiften!"
+# git push
 #
 #chmod +x update.sh
 # Del 2.2 Tilldela IP till desktop  20/09-26/09-2026 "felsökning och lagning"
@@ -56,6 +56,19 @@
 # Del 3.2 Windows Powershell  29/09-2026
 # Jag har väldigt liten erfarenhet av powershell därav blev jag handledd av AI som förklarade hur jag skulle gå tillväga för att skapa genvägar till mapparna
 # samt kolla upp behörigheter på filerna. Jag tog även skärmdump där på allt jag behövde göra och nu pushar jag in allt i git.
+#
+# Del 4 AI-stöd och kritisk utvärdering  30/09-2026
+#
+# prompt gemini
+# Du ska agera som en erfaren, uppmuntrande och pedagogisk lärare i nätverksteknik och operativsystem. Din elev är en helt ny student som precis har börjat sina studier och behöver lära sig grunderna från botten.
+# När jag anger ett kommandoradskommando (t.ex. 'chmod', 'traceroute', 'grep') eller ett begrepp/en funktion inom nätverk och behörigheter (t.ex. 'DNS', 'SSH-nycklar', 'SUDO', 'Subnätmasker'), vill jag att du förklarar det enligt följande struktur:
+# Vid varje begrepp förklara i steg för steg utav avbrott, få eleven att använda virtual box och cisco packet tracer , för att följa dina Hänvisningar och lära sig under processen.
+# AI svar på bild
+# Kritik av svar
+# Svaret på prompten var kortfattat och gav öppningar för vidare frågor, uppgifter & utmaningar. Däremot följde inte AI:n kommandot att fortsätta oavbrutet med steg-för-steg instruktioner, utan gav en mer generell förklaring. 
+# Det hade varit mer pedagogiskt att bryta ner varje begrepp i mindre delar och ge konkreta exempel på hur man kan använda dem i praktiken, särskilt med tanke på att eleven är nybörjare.
+# I AI svar 2 på frågan "ge mig en färdig kod exemplar i linux" att  AI gav ett skript på ping och förklarar hyvsatt del för del men hoppar över många tecken såsom "read -p, -c, -eq" vilket för en nybörjar student kan vara förvirrande.
+# Det hade varit bättre att inkludera dessa tecken och ge en mer detaljerad förklaring av deras funktion och betydelse i skriptet.
 #
 #
 #
