@@ -42,4 +42,20 @@
 # jag ändrade därför ip adressen till rätt desktop ip som var 192.168.10.21/24 och då fungerade det, 
 # jag kunde pinga servern och se ip adressen på desktop.
 #
+# Del 3 Skapa mapp och fil på servern samt ge rättigheter  28/09-2026
+# Vi vet att dessa kommandon måste användas via "sudo" 
+# mkdir för att skapa mapparna, och vi använde "-p" för att skapa alla mappar i samma kommand
+# därefter touch för att skapa filen anteckningar.txt
+# vi vill därefter att ge rättigheter till filen och mappen, vi vill att alla ska kunna läsa och skriva i filen men bara ägaren ska kunna ändra i mappen,
+# därför användes chown för att ändra ägaren till filen och mappen, samt chmod 750 till mapparna /var/sytementor/konsultdata och
+# chmod 640 till filen /var/sytementor/konsultdata/anteckningar.txt för att ägern ska kunna läsa och skriva men gruppen bara ska kunna läsa
+# för att se till att rättighgeterna är som de ska användes kommandot "ls -la /var/sytementor/konsultdata" och "ls -la /var/sytementor/konsultdata/" 
+# där jag såg att rättigheterna var som de skulle. med mapparna drwxr-x--- och filen -rw-r----- vilket var som det skulle vara.
+# Jag pingade alla enheter til varandra för att se att de kunde kommunicera med varandra och det fungerade. och därefter tog skärmbilder
+#
+# Del 3.2 Windows Powershell  29/09-2026
+# Jag har väldigt liten erfarenhet av powershell därav blev jag handledd av AI som förklarade hur jag skulle gå tillväga för att skapa genvägar till mapparna
+# samt kolla upp behörigheter på filerna. Jag tog även skärmdump där på allt jag behövde göra och nu pushar jag in allt i git.
+#
+#
 #
